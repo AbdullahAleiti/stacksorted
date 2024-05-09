@@ -364,6 +364,23 @@ aside {
 	min-width: 200px;
 	position: sticky;
 	top: 1rem;
+	max-height: calc(100vh - 50px);
+	overflow-y: scroll;
+}
+
+aside::-webkit-scrollbar {
+	background-color: var(--primary-a2);
+	border-radius: 10px;
+	width: 3px;
+}
+
+aside::-webkit-scrollbar-track {
+	margin:10px;
+}
+
+aside::-webkit-scrollbar-thumb {
+	background-color: var(--primary-a);
+	border-radius: 100px;
 }
 
 .option {
